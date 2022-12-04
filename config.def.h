@@ -69,7 +69,7 @@ static const struct arg args[] = {
 { battery_perc, "%s%% ", "BAT0" },
 { cpu_perc, "[CPU: %s%%] ", NULL },
 { ram_perc, "[RAM: %s%%] ", NULL },
-//{ run_command, "[VOL: %s] ", "pamixer --get-volume-human" },	/* for pipewire-pulse & pulse, needs pamixer
+//{ run_command, "[VOL: %s] ", "pamixer --get-volume-human" },	/* for pipewire-pulse & pulse, needs pamixer */
 { vol_perc, "[VOL: %s%%] ", "/dev/mixer" }, /* for alsa, needs legacy snd-pcm-oss module */
 { datetime, "%s", "%a %F %T" },
 
