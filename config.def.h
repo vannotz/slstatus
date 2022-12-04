@@ -24,7 +24,7 @@ static const char unknown_str[] = "n/a";
  * datetime            date and time                   format string (%F %T)
  * disk_free           free disk space in GB           mountpoint path (/)
  * disk_perc           disk usage in percent           mountpoint path (/)
- * disk_total          total disk space in GB          mountpoint path (/")
+ * disk_total          total disk space in GB          mountpoint path (/)
  * disk_used           used disk space in GB           mountpoint path (/)
  * entropy             available entropy               NULL
  * gid                 GID of current user             NULL
@@ -71,6 +71,6 @@ static const struct arg args[] = {
 { ram_perc, "[RAM: %s%%] ", NULL },
 //{ run_command, "[VOL: %s] ", "pamixer --get-volume-human" },	/* for pipewire-pulse & pulse, needs pamixer
 { vol_perc, "[VOL: %s%%] ", "/dev/mixer" }, /* for alsa, needs legacy snd-pcm-oss module */
-{ datetime, "%s", "%T %F" },
+{ datetime, "%s", "%a %F %T" },
 
 	};
